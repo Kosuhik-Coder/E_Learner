@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+.env
+.DS_Store
+
+# Build files
+build/
+dist/
+
+# Uploads folder (for course videos, images, etc.)
+uploads/
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# MongoDB database files (if you ever use local MongoDB)
+*.db
+*.sqlite
+
+# Local environment file
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Miscellaneous
+.idea/
+.vscode/
