@@ -173,10 +173,6 @@ const Lecture = ({ user }) => {
         <Loading />
       ) : (
         <>
-          <div className="progress">
-            Lecture completed - {completedLec} out of {lectLength} <br />
-            <progress value={completed} max={100}></progress> {completed} %
-          </div>
           <div className="lecture-page">
             <div className="left">
               {lecLoading ? (
