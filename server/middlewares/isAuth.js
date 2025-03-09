@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { User } from "../models/User.js";
 
 export const isAuth = async (req, res, next) => {
-  console.log("isAuth"+req)
+  
   try {
     const token = req.headers.token;
 

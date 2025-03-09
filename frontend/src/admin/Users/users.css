@@ -1,8 +1,102 @@
 .users {
-  width: 350px;
-  overflow-x: auto;
-  white-space: nowrap;
+  width: 80%;
   margin: 20px auto;
-  min-height: 80vh;
-  border: solid gray 1px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.users h1 {
+  padding: auto;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.users table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow-x: auto;
+}
+
+.users table, .users th, .users td {
+  border: 1px solid black;
+}
+
+.users th, .users td {
+  padding: 10px;
+  text-align: left;
+}
+
+.users th {
+  background: #007bff;
+  color: white;
+}
+
+.users tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.common-btn {
+  padding: 8px 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.common-btn:hover {
+  background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .users {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .users h1 {
+    padding: auto;
+    font-size: 20px;
+  }
+
+  .users table {
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .users th, .users td {
+    padding: 8px;
+  }
+
+  .common-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .users h1 {
+    font-size: 18px;
+  }
+
+  .users table {
+    font-size: 12px;
+  }
+
+  .users th, .users td {
+    padding: 6px;
+  }
+
+  .common-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
 }
